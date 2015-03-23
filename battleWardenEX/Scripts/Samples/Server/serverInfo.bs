@@ -1,0 +1,17 @@
+function export Main (parameter as string)
+
+  ConsoleOpen("Server Info")
+  
+  Print("Host: " + #Host)   
+  Print("Port: " + Str(#Port))
+  Print("Description: " + #HostDescription)
+  
+  ; #Host, #Port and #HostDescription are constants set by battleWarden!
+  
+  Print("Please hit return in order to close the console.")
+  
+  Input()
+  
+  ConsoleClose()
+  
+endfunction

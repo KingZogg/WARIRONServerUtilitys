@@ -1,0 +1,5 @@
+function export Main (parameter as string)
+
+PopUpSysTrayInfo("Someone is calling you!", parameter)
+  
+endfunction

@@ -1,0 +1,9 @@
+function export Main (parameter as string)
+
+; See the "Script" tab in bW:RCon GUI
+Debug "==================== Hello world! ===================="
+
+; See the "Log" tab in bW:RCon GUI
+LogOutput "==================== Hello world! ===================="
+
+endfunction

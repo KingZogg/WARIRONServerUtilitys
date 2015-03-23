@@ -1,0 +1,8 @@
+; This script will be executed when battleWarden:Script is initialized!
+
+
+function export Main (parameter as string)
+
+PopUpSysTrayInfo("battleWarden:RCon EX", "Welcome to extended version of bW:RCon" + Chr(10) + "You can remove this notification by editing the start.bs script!")
+  
+endfunction

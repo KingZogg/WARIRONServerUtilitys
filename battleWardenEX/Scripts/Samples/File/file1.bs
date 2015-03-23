@@ -1,0 +1,24 @@
+﻿; This sample demonstrates some functions of the file runtime.
+; You will notice that the script engine supports UTF-8 encoding!
+; Always make sure that your source files contain the UTF-8 BOM header when working with UTF-8 strings.
+
+function export Main (parameter as string)
+  dim file as integer
+  
+  ; Create our file
+  file = CreateFile("myfile.txt")
+  if file
+    WriteString(file, "Здравствуйте!")
+    WriteInteger(file, 10)
+    CloseFile(file)
+  endif
+  
+  ; Read our file
+  file = ReadFile("myfile.txt")
+  if file
+    Debug ReadString(file)
+    Debug Str(ReadInteger(file))
+    CloseFile(file)
+  endif
+  
+endfunction

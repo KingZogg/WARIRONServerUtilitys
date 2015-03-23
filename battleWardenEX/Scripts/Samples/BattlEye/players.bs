@@ -1,0 +1,26 @@
+; This sample will go through all players and display them in a console.
+; !!!!!!!!!!!!!!!!!!!! IMPORTANT NOTE !!!!!!!!!!!!!!!!!!!!
+; This code can take a few seconds to finish.
+
+function export Main (parameter as string)
+  dim playerCount as integer
+
+  ConsoleOpen("Players")
+   
+  playerCount = BEGetPlayerList()
+
+  while BENextPlayerListElement()
+    Print(BEGetCurrentPlayerName() + " : " + Str(BEGetCurrentPlayerScore())  + " : " + BEGetCurrentPlayerIP())
+  wend
+  
+  ; also possible: BEGetCurrentPlayerDeaths, BEGetCurrentPlayerTeam, BEGetCurrentPlayerPing
+
+  Print("Total player count: " + Str(playerCount))
+ 
+  Print("Please hit return in order to close the console.")
+  
+  Input()
+  
+  ConsoleClose()
+  
+endfunction

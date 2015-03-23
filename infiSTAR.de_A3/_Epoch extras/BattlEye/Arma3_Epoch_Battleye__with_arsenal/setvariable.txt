@@ -1,0 +1,1 @@
+5 "" !=(Offer|Accept|BUILD_SLOT|TRADE_ACTIVE|last_targeter) !"a3randvar" !"bis_fnc_setunitinsignia_class"

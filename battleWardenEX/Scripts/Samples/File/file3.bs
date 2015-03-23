@@ -1,0 +1,28 @@
+; This sample demonstrates some functions of the file runtime.
+
+function export Main (parameter as string)
+  dim file as integer
+  dim n as integer
+  
+  ; Open our file
+  file = OpenFile("myfile.txt")
+  if file
+    FileSeek(file, FileLength(file))
+    
+    WriteString(file, "Append this line to end of file.")
+    
+    CloseFile(file)
+  endif
+  
+  ; Read our file
+  file = ReadFile("myfile.txt")
+  if file
+    
+    while EndOfFile(file) = 0
+      Debug ReadString(file)
+    wend
+    
+    CloseFile(file)
+  endif
+  
+endfunction

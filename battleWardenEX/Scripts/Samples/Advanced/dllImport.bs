@@ -1,0 +1,15 @@
+DYLIBIMPORT "User32.dll"
+  MsgBox(hWnd as INTEGER, text as STRING, title as STRING, flags as INTEGER) as integer ALIAS "MessageBoxW"
+ENDDYLIBIMPORT
+
+DYLIBIMPORT "Kernel32.dll"
+  Beep(dwFreq as integer, dwDuration as integer) as integer
+ENDDYLIBIMPORT
+
+function export Main (parameter as string)
+
+  MsgBox(0, "Hello!", "Title", 0)
+  Beep(1750, 1000)
+  
+endfunction
+

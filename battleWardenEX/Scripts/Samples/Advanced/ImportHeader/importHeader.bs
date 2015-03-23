@@ -1,0 +1,9 @@
+IMPORT "Scripts\Samples\Advanced\ImportHeader\winAPI.h" ; do not try to edit winAPI.h since it is a pre-compiled file.
+
+function export Main (parameter as string)
+
+  MsgBox(0, "Hello!", "Title", 0)
+  Beep(1750, 1000)
+  
+endfunction
+

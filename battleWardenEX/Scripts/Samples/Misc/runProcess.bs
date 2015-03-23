@@ -1,0 +1,11 @@
+; Sample demonstrating the RunProcess function.
+; 1. parameter : process name
+; 2. parameter : process parameter
+; 3. parameter : working directory
+; 4. parameter : flags (combination of -hide and -wait)
+
+function export Main (parameter as string)
+
+RunProcess("cmd.exe", "", "", "")
+
+endfunction

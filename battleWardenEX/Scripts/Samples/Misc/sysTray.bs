@@ -1,0 +1,5 @@
+function export Main (parameter as string)
+
+PopUpSysTrayInfo("Server Information", "Host: " + #Host + Chr(10) + "Port: " + Str(#Port))
+  
+endfunction

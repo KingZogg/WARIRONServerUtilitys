@@ -1,0 +1,15 @@
+; This sample will send a few battleye commands.
+; See https://community.bistudio.com/wiki/BattlEye for more information.
+; Note that this may also affect the GUI.
+
+function export Main (parameter as string)
+
+BESendCommand("bans")
+
+; This will also be displayed on the "Chat" tab
+BESendCommand("say -1 Hello!")
+
+; See "Log" tab
+BESendCommand("players")
+
+endfunction

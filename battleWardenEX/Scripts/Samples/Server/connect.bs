@@ -1,0 +1,31 @@
+; This sample will establish a connection to a BE server.
+
+function export Main (parameter as string)
+  dim host, port, password as string
+  
+  ConsoleOpen("Custom Connect")
+  
+  Print("Please enter host name or ip: ")
+  host = Input()
+  
+  Print("Please enter port: ")
+  port = Input()
+  
+  Print("Please enter password: ")
+  password = Input()
+  
+  Print("Connecting...")
+  
+  If Connect(host, Val(port), password)
+    Print("Connection has been established successfully!")
+  else
+    Print("Could not connect!")
+  endif
+  
+  Print("Please hit return in order to close the console.")
+  
+  Input()
+  
+  ConsoleClose()
+  
+endfunction

@@ -1,0 +1,9 @@
+;CREATEIMPORTFILE "winAPI.h" ; uncomment this to make battleWarden create a header file
+
+DYLIBIMPORT "User32.dll"
+  MsgBox(hWnd as INTEGER, text as STRING, title as STRING, flags as INTEGER) as integer ALIAS "MessageBoxW"
+ENDDYLIBIMPORT
+
+DYLIBIMPORT "Kernel32.dll"
+  Beep(dwFreq as integer, dwDuration as integer) as integer
+ENDDYLIBIMPORT

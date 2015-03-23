@@ -1,0 +1,3 @@
+ARMA_LOG.dll writes TXT Log files (HackerLog, SurveillanceLog and AdminLog)
+ARMA_BAN.dll writes a BAN.txt with hacker UIDs in so they can not connect again (unless you remove their UID from the file)
+url_fetch.dll is by KillZoneKid - Loads information from a webpage - I might add some content that uses it (updatechecker?)

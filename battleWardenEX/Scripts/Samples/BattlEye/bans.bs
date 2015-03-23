@@ -1,0 +1,25 @@
+; This sample will go through all bans and display them in a console.
+; !!!!!!!!!!!!!!!!!!!! IMPORTANT NOTE !!!!!!!!!!!!!!!!!!!!
+; This code can take a few seconds to finish.
+
+function export Main (parameter as string)
+  dim banCount as integer
+
+  ConsoleOpen("Bans")
+   
+  banCount = BEGetBanList()
+
+  while BENextBanListElement()
+    Print(BEGetCurrentBanID() + " : " + BEGetCurrentBanDuration() + " : " + BEGetCurrentBanReason())
+  wend
+
+  Print("Total ban count: " + Str(banCount))
+  
+ 
+  Print("Please hit return in order to close the console.")
+  
+  Input()
+  
+  ConsoleClose()
+  
+endfunction

@@ -1,0 +1,9 @@
+INCLUDESOURCEFILE "Scripts\Samples\Advanced\IncludeFile\winAPI.bs"
+
+function export Main (parameter as string)
+
+  MsgBox(0, "Hello!", "Title", 0)
+  Beep(1750, 1000)
+  
+endfunction
+

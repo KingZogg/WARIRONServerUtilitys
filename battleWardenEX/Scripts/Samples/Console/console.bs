@@ -1,0 +1,17 @@
+; This sample demonstrates some functions of the console runtime.
+
+function export Main (parameter as string)
+  dim str as string
+
+  ConsoleOpen("Title")
+  
+  str = Input()
+  
+  Print("You entered: " + str)
+  Print("Please hit return in order to close the console.")
+  
+  Input()
+  
+  ConsoleClose()
+  
+endfunction

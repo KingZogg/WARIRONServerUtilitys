@@ -1,0 +1,5 @@
+function export Main (parameter as string)
+
+SetStatusBarText("Hello world!")
+  
+endfunction
